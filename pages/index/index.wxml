@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view>
+  <cover-image src='../image/1.png'></cover-image>
+</view>
