@@ -1,4 +1,33 @@
 <!--index.wxml-->
+<script src="./iconfont.js"></script>
 <view>
-  <cover-image src='../image/1.png'></cover-image>
+<!-- 轮播图 -->
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}"
+        interval="{{interval}}">
+    <block wx:for="{{imgs}}" wx:key="*this">
+      <swiper-item><image src='../image/{{item}}.png'></image></swiper-item>
+    </block> 
+  </swiper>
+  <!-- 导航菜单 -->
+  <navigator
+    wx:for="{{nav_name}}" 
+    wx:key="*this"
+    url="/page/navigate/navigate?title=navigate"
+    hover-class="navigator-hover"
+  >
+    <view class='nav-view'>
+      <view class='order-view'>
+        <view class='text-view'>
+          <text class='c-text'>{{item.cn}}</text>
+          <text class='e-text'>{{item.en}}</text>
+        </view>
+        
+        <image class='icon' src='{{item.svg}}'></image>
+      </view> 
+    </view>
+  </navigator>
+  <view class='img_view'>
+    <image mode='aspectFit' src='../image/4.png'></image>
+  </view>
+  
 </view>
