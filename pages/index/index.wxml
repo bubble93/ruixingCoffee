@@ -1,5 +1,4 @@
 <!--index.wxml-->
-<script src="./iconfont.js"></script>
 <view>
 <!-- 轮播图 -->
   <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}"
@@ -12,7 +11,7 @@
   <navigator
     wx:for="{{nav_name}}" 
     wx:key="*this"
-    url="/page/navigate/navigate?title=navigate"
+    url="#"
     hover-class="navigator-hover"
   >
     <view class='nav-view'>
@@ -20,8 +19,7 @@
         <view class='text-view'>
           <text class='c-text'>{{item.cn}}</text>
           <text class='e-text'>{{item.en}}</text>
-        </view>
-        
+        </view>      
         <image class='icon' src='{{item.svg}}'></image>
       </view> 
     </view>
@@ -29,5 +27,4 @@
   <view class='img_view'>
     <image mode='aspectFit' src='../image/4.png'></image>
   </view>
-  
 </view>

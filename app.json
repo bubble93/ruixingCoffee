@@ -9,5 +9,43 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#4db900",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./pages/image/shouye.png",
+        "selectedIconPath": "./pages/image/shouye_select.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "菜单",
+        "iconPath": "./pages/image/caidan.png",
+        "selectedIconPath": "./pages/image/caidan_select.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "订单",
+        "iconPath": "./pages/image/dingdan.png",
+        "selectedIconPath": "./pages/image/dingdan_select.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "购物车",
+        "iconPath": "./pages/image/gouwuche.png",
+        "selectedIconPath": "./pages/image/gouwuche_select.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "./pages/image/wode.png",
+        "selectedIconPath": "./pages/image/wode_select.png"
+      }
+    ]
   }
 }
